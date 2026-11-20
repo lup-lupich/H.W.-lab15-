@@ -22,6 +22,7 @@
    - if: (`store_num` == 0) return 0;
    - else if: (`store_num` > 10 || store_num < 0) printf("Такого магазина нет\n\n");
    - else: printf("Среднемесячный доход %d магазина: %.2f\n\n", `store_num`, income_calculation((int*)`array`, `store_num`));
+   - Функция income_calculation() рассчитывает среднемесячный доход любого магазина
    - Функция income_calculation() принимает int* `ptr_array`, int `store_num` - указатель на массив, номер магазина
    - Функция income_calculation() возвращает double `average / 12` - среднемесячный доход магазина
 10. Конец do-while
